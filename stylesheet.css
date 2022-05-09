@@ -12,55 +12,6 @@
     font-family: roboto-bold;
     src: url(roboto/Roboto-Bold.ttf);
 }
-
-header{
-    width: 1146px;
-    height: 68px;
-    left: 220px;
-    top: 0px;
-    align-items: flex-start;
-    position: relative;
-    background-color: #FDF1EB;
-    margin: 0px;
-}
-
-.h1Header{
-    color: #725C5C;
-    margin: 0px;
-    font-family: roboto;
-    font-size: 20px;
-    padding: 10px 0px 5px 40px;
-}
-
-.h2Logo{
-    height: 68px;
-    font-family: roboto-bold;
-    color: #FFFFFF;
-    font-size: 30px;
-    background-image: linear-gradient(#FFB354, #EE7A3A);
-    margin: 0px;
-    padding-top: 20px;
-    padding-left: 20px;
-    
-}
-
-.h4Header{
-    margin: 0px;
-    color: #725C5C;
-    font-family: roboto;
-    font-size: 14px;
-    padding: 10px 0px 5px 40px;
-
-}
-
-.spanHeader {
-    font-family: roboto;
-    font-size: 14px;
-    color: #725C5C;
-    padding: 10px 0px 5px 40px;
-
-
-}
 .barraFixa{
     height: 100%;
     width: 220px;
@@ -104,6 +55,73 @@ header{
     border-image-slice: 1;
     height: 10px;
     background-color: #FDF1EB;
+}
+
+header{
+    
+    height: 88px;
+    left: 220px;
+    top: 0px;
+    display: flex;
+    position: relative;
+    background-color: #FDF1EB;
+    margin: 0px;
+}
+
+.h1Header{
+    color: #725C5C;
+    margin: 0px;
+    font-family: roboto;
+    font-size: 20px;
+    padding: 10px 0px 0px 40px;
+    
+}
+
+.h2Logo{
+    height: 68px;
+    font-family: roboto-bold;
+    color: #FFFFFF;
+    font-size: 30px;
+    background-image: linear-gradient(#FFB354, #EE7A3A);
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0px;
+
+    
+}
+
+.h4Header{
+    margin: 0px;
+    color: #725C5C;
+    font-family: roboto;
+    font-size: 14px;
+    padding: 10px 0px 5px 40px;
+    
+
+}
+
+.spanHeader {
+    font-family: roboto;
+    font-size: 14px;
+    color: #725C5C;
+    padding: 5px 0px 5px 40px;
+
+
+}
+.titulosHeader{
+    flex-wrap: nowrap;
+}
+
+.botãoIdioma {
+    padding: 30px 0px 0px 500px;
+}
+.botãoIdioma div{
+    flex-wrap: nowrap;
+    
+
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
 }
 
 body{
