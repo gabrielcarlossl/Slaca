@@ -272,14 +272,22 @@ main{
     background-color: #FDF1EB;
     border: 2px solid #ECECEC;
     padding: 10px 10px 10px 10px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.lista{}
+.lista{
+    
+    border: 2px solid #ECECEC;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 .tituloLista{}
     
-.autores{}
+.autores{
+    
+}
 
 .instituições{}
 
