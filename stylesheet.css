@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: quicksand;
+    src: url(quicksand/Quicksand-Regular.ttf);
+}
+
+@font-face {
     font-family: roboto;
     src: url(roboto/Roboto-Regular.ttf);
 }
@@ -283,12 +288,32 @@ main{
     border-bottom-right-radius: 5px;
 }
 
-.tituloLista{}
+.tituloLista{
+    font-family: Quicksand medio;
+    color: #5C5C5C;
+    padding: 10px 10px 0px 10px;
+}
     
 .autores{
-    
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+.autores li {
+    font-family: quicksand;
+    color: #5C5C5C;
 }
 
-.instituições{}
+.instituições{
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.instituições li{
+    font-family: quicksand;
+    color: #ADA0A0;
+}
+
+
 
 
