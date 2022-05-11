@@ -1,11 +1,17 @@
+
+@font-face {
+    font-family: quicksand;
+    src: url(quicksand/Quicksand-Regular.ttf);
+}
+
 @font-face {
     font-family: Quicksand medio;
     src: url(quicksand/Quicksand-Medium.ttf);
 }
 
 @font-face {
-    font-family: quicksand;
-    src: url(quicksand/Quicksand-Regular.ttf);
+    font-family: quicksand bold;
+    src: url(quicksand/Quicksand-Bold.ttf);
 }
 
 @font-face {
@@ -23,10 +29,19 @@
     src: url(roboto/Roboto-Medium.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Raleway:wght@600&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    max-width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
 .barraFixa{
     height: 100%;
     width: 220px;
@@ -75,13 +90,13 @@
 
 header{
     
+    width: 100%;
     height: 88px;
-    left: 220px;
     top: 0px;
     display: flex;
     position: relative;
     background-color: #FDF1EB;
-    margin: 0px;
+    margin: 0px 0px 0px 220px;
     white-space: nowrap;
    
 }
@@ -92,7 +107,8 @@ header{
     font-family: roboto;
     font-size: 20px;
     padding: 10px 0px 0px 40px;
-    
+    width: 100%;
+
 }
 
 .h2Logo{
@@ -142,7 +158,7 @@ header{
 }
 
 .botãoIdioma {
-    padding: 30px 0px 0px 500px;
+    padding: 30px 0px 0px 300px;
 }
 .botãoIdioma div{
     flex-wrap: nowrap;
@@ -160,6 +176,7 @@ select {
    border: none;
    background-color: #FDF1EB;
    font-size: 16px;
+   
 
 }
 
@@ -167,8 +184,11 @@ select {
     display: flex;
     flex-flow: column nowrap;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 70px;
     align-items: flex-end;
+    background-color: #FDF1EB;
+    
+
     
 }
 
@@ -176,7 +196,8 @@ select {
 .rosto{
     display: flex;
     align-items: center;
-    padding-left: 5px;
+    padding: 5px 5px 0px 5px;
+    background-color: #FDF1EB;
 
 }
 
@@ -184,9 +205,6 @@ select {
     border-radius: 40px;
 }
 
-body{
-    margin: 0px;
-}
 
 .video{
 
@@ -209,13 +227,14 @@ main{
 
 .botoesDetalhes {
     flex-flow: column nowrap;
+    max-width: 70%;
 }
 
 .botões{
 
     display: flex;
     padding: 20px 10px 20px 100px;
-    margin: 0px 7px 0px 200px;
+    margin: 0px 7px 0px 75px;
 }
 
 .botaoDownload {
@@ -228,6 +247,16 @@ main{
     background-color: #ED7839;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    
+}
+
+.botaoDownload:hover {
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);
+}
+
+.botaoDownload:active{
+    transform: translateY(4px);
 }
 
 .imgDownload {
@@ -241,6 +270,14 @@ main{
     padding: 5px 8px 5px 8px;
     margin: 0px 7px 0px 7px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.star:hover{
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);
+}
+.star:active{
+    transform: translateY(4px);
 }
 
 
@@ -251,6 +288,15 @@ main{
     background-color: #ED7839;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.doi:hover{
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);
+
+}
+.doi:active{
+    transform: translateY(4px);
+
 }
 
 .citar{
@@ -258,13 +304,16 @@ main{
     font-family: roboto;
     font-size: 16px;
     color: #ED7839;
-    margin: 0px 7px 0px 300px;
+    margin: 0px 7px 0px 164px;
 
 }
 
 .detalhes{
     padding: 10px 10px 10px 10px;
-    margin: 2px 7px 0px 250px;
+    margin: 2px 7px 0px 143px;
+    height: 415px;
+    max-width: 250px;
+    max-height: 415px;
    
 
 }
@@ -286,6 +335,36 @@ main{
     border: 2px solid #ECECEC;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    max-height: 350px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: #dfdede; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #BFBFBF; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #9e9e9e; 
+}
+
+.listaDetalhes{
+    font-family: quicksand;
+    font-size: 15px;
+    padding: 10px 10px 0px 10px;
+
+}
+
+.listaDetalhes li{
+    list-style: none;
 }
 
 .tituloLista{
@@ -314,6 +393,199 @@ main{
     color: #ADA0A0;
 }
 
+.resumo{
+    padding: 20px 10px 20px 35px;
+    margin: 0px 0px 0px 220px;
+    
+
+}
+
+.resumo h3{
+    border-bottom: 2px solid #ECECEC;
+    font-family: quicksand medio;
+    font-size: 20px;
+    background-color: #FDF1EB;
+    padding: 10px 10px 10px 10px;
+
+}
+.resumoDiv{
+    border: 2px solid #ECECEC;
+    border-radius: 4px;
+}
+.resumo p{
+    padding: 10px 10px 10px 10px;
+}
+
+#mais{
+    display: none;
+}
+
+#verMais{
+    
+    border: none;
+    background: none;
+    font-family: quicksand medio;
+    color: #ED7839;
+    font-weight: bolder;
+    padding: 0px 0px 10px 10px;
+
+}
+
+#verMais:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+#verMais:active{
+    transform: translateY(2px);
+}
+
+.discussao{
+
+    padding: 20px 10px 20px 35px;
+    margin: 0px 0px 0px 220px;
+    border: 2px solid #ECECEC;
+    border-radius: 4px;
+}
+
+.discussaoDiv{
+    
+    border: 2px solid #ECECEC;
+    border-radius: 4px;
+}
+
+
+.discussaoDiv h3{
+    
+    align-self: start;
+    font-family: quicksand medio;
+    font-size: 20px;
+    background-color: #FDF1EB;
+    padding: 10px 10px 10px 10px;
+}
+
+.inicio{
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inicio h2{
+    font-family: quicksand bold;
+    font-weight: bold;
+    color: #ED7839;
+    display: grid;
+    justify-items: center;
+    padding: 10px 10px 10px 10px;
+}
+.inicio span{
+    padding: 10px 10px 10px 10px;
+
+}
+
+.inicio{
+ display: flex;
+ flex-flow: column nowrap;
+
+ border-bottom: 2px solid #E7E7E7;
+}
+
+.criarTopico{
+    border: none;
+    background-image: linear-gradient(#FFB354, #EE7A3A);
+    font-family: quicksand ;
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    max-width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.404);
+    position: relative;
+    top:20px;
+    cursor: pointer;
+}
+.criarTopico:hover{
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+.criarTopico:active{
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin: 3px 0px 3px 220px;
+    padding-left: 35px;
+    border-top: 2px solid #E7E7E7;
+    
+}
+
+footer section{
+   display: flex;
+}
+
+.galoa{
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #71478e;
+    
+}
+.AP{
+    color: #71478e;
+    white-space: nowrap;
+    margin: 3px 0px 3px 3px;
+}
+.logoFooter{
+    padding: 10px 10px 50px 10px;
+}
+.logoFooter span{
+    font-family: quicksand;
+    
+}
+
+.textoFooter{
+    display: grid;
+    align-items: center;
+    height: 150px;
+}
+.textoFooter span{
+    font-family: quicksand;
+}
+
+.saibaMais{
+    background-color: #71478e;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 45px 3px 45px;
+    white-space: nowrap;
+    
+    position: relative;
+    top: 5px;
+}
 
 
 
