@@ -128,7 +128,7 @@
 
             <button onclick = "botaoVerMais()" id="verMais">Ver Mais</button>
 
-            <script type = "text/javascript" src="script.js"></script>
+            <script type = "text/javascript" src="scripts/script.js"></script>
             
         </div>
 
@@ -142,13 +142,19 @@
                     <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
                     <div><img src="Site_Slaca/duvidadas.png" alt="icones duvida"></div>
                     <span>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</span>
-                    <button class="criarTopico">&plus; criar tópico</button>
+                    <button class="criarTopico">Adicione seu topico</button>
                 </div>
                 
             </div>
-            
-        </div>        
 
+            <div class="container">
+                <textarea id="comment"></textarea>
+                <button id="addComments">Enviar</button>
+                <div id="allComments"></div>
+            </div>
+            <script src="scripts/comentario.js"></script>
+            
+        </div>      
     </section>       
     
 

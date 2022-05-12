@@ -14,3 +14,6 @@ function botaoVerMais(){
         verMais.innerHTML = "Ver Menos"
     }
 }
+
+
+
