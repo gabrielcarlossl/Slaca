@@ -253,6 +253,7 @@ main{
 
 .botaoDownload > a{
     text-decoration: none;
+    color: inherit;
 }
 
 .botaoDownload > a:visited{
