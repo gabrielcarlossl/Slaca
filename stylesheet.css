@@ -160,6 +160,7 @@ header{
 
 .botãoIdioma {
     padding: 30px 0px 0px 300px;
+    
 }
 .botãoIdioma div{
     flex-wrap: nowrap;
@@ -177,8 +178,8 @@ select {
    border: none;
    background-color: #FDF1EB;
    font-size: 16px;
+   outline: none;
    
-
 }
 
 .emailHeader{
@@ -193,7 +194,6 @@ select {
     
 }
 
-
 .rosto{
     display: flex;
     align-items: center;
@@ -205,7 +205,6 @@ select {
 .imagemRosto{
     border-radius: 40px;
 }
-
 
 .video{
 
@@ -252,8 +251,16 @@ main{
     
 }
 
+.botaoDownload > a{
+    text-decoration: none;
+}
+
+.botaoDownload > a:visited{
+    color: inherit;
+}
+
 .botaoDownload:hover {
-    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 
 .botaoDownload:active{
@@ -275,12 +282,11 @@ main{
 }
 
 .star:hover{
-    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 .star:active{
     transform: translateY(4px);
 }
-
 
 .doi{
 
@@ -292,8 +298,7 @@ main{
     cursor: pointer;
 }
 .doi:hover{
-    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);
-
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 .doi:active{
     transform: translateY(4px);
@@ -303,10 +308,10 @@ main{
 .citar{
     
     font-family: roboto;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;
     color: #ED7839;
-    margin: 0px 7px 0px 164px;
-
+    margin: 0px 7px 0px 150px;
 }
 
 .detalhes{
@@ -315,8 +320,6 @@ main{
     height: 415px;
     max-width: 250px;
     max-height: 415px;
-   
-
 }
 
 .nomeSeção{
@@ -557,9 +560,9 @@ input[type=text]:invalid {
     border-radius: 5px;
     box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.404);
     position: relative;
-    top:20px;
+    top:5px;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #addComments:active{
@@ -665,6 +668,3 @@ footer section{
     position: relative;
     top: 5px;
 }
-
-
-
