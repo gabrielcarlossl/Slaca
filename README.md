@@ -1,2 +1,2 @@
 # Slaca
-Site feito para seleção da Chuva Inc
+Site feito para seleção de vaga para desenvolvedor front end
